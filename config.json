@@ -1,0 +1,13 @@
+{
+  "bot": {
+    "prefix": "lwr "
+  },
+  "tokens": {
+    "discord": "Mzk1NDI0MTUyOTIxNTcxMzMw.DmDn4w.ZWEbslJ7hNOZUaYWAayFNZc_SmE"
+  },
+  "prefs": {
+    "enableDirectMessages": false,
+    "enableDidYouMean": true,
+    "maxPurgeMessages": 500
+  }
+}
