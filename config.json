@@ -1,9 +1,9 @@
 {
   "bot": {
-    "prefix": "lwr "
+    "prefix": ""
   },
   "tokens": {
-    "discord": "Mzk1NDI0MTUyOTIxNTcxMzMw.DmDn4w.ZWEbslJ7hNOZUaYWAayFNZc_SmE"
+    "discord": ""
   },
   "prefs": {
     "enableDirectMessages": false,
