@@ -29,17 +29,19 @@ const commands = (() => {
 		return files;
 })();
 // construct array from commands array for use with didyoumean
-console.log('Loading didyoumean...');
-const dym = (() => {
-		let files = [];
-		let folder = fs.readdirSync('./commands');
-		for (let filename of folder) {
-				if (filename.endsWith('.js')) {
-						files.push(filename.replace(/\.[^/.]+$/, ''));
+if (config.prefs.enableDidYouMean) {
+		console.log('Loading didyoumean...');
+		const dym = (() => {
+				let files = [];
+				let folder = fs.readdirSync('./commands');
+				for (let filename of folder) {
+						if (filename.endsWith('.js')) {
+								files.push(filename.replace(/\.[^/.]+$/, ''));
+						}
 				}
-		}
-		return files;
-})();
+				return files;
+		})();
+}
 // do stuff when message received
 client.on('message', async (message) => {
 		// if message is invalid, throw it out
